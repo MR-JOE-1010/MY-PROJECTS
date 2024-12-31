@@ -346,10 +346,10 @@ span {
 
 @media screen and (max-width: 700px) {
     .home {
-        background-image: url('https://i.ibb.co/r2Hd37T/rb-1325.png');
+        background-image: url('https://i.imgur.com/CX2IBZQ.png');
         background-size: contain;
         background-position: top;
-        margin-top: 6rem;
+        margin-top: 7rem;
     }
     .home-content {
         max-width: 35rem;
