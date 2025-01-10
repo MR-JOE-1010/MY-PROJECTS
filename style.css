@@ -437,8 +437,54 @@ span {
     color: var(--text-color);
 }
 
+/* Add these new styles for the progress bars */
+.skills-content .progress .bar {
+    height: 2.5rem;
+    border-radius: .6rem;
+    border: .2rem solid var(--main-color);
+    padding: .5rem;
+    margin: 1rem 0;
+}
 
+.skills-content .progress .bar span {
+    display: block;
+    height: 100%;
+    border-radius: .3rem;
+    background: var(--main-color);
+}
 
+/* Set individual widths for each skill bar */
+.skills-column:first-child .skills-content .progress:nth-child(1) .bar span {
+    width: 93%;
+}
+
+.skills-column:first-child .skills-content .progress:nth-child(2) .bar span {
+    width: 95%;
+}
+
+.skills-column:first-child .skills-content .progress:nth-child(3) .bar span {
+    width: 80%;
+}
+
+.skills-column:first-child .skills-content .progress:nth-child(4) .bar span {
+    width: 85%;
+}
+
+.skills-column:last-child .skills-content .progress:nth-child(1) .bar span {
+    width: 96%;
+}
+
+.skills-column:last-child .skills-content .progress:nth-child(2) .bar span {
+    width: 92%;
+}
+
+.skills-column:last-child .skills-content .progress:nth-child(3) .bar span {
+    width: 80%;
+}
+
+.skills-column:last-child .skills-content .progress:nth-child(4) .bar span {
+    width: 95%;
+}
 
 @media screen and (max-width: 768px) {
     #menu-icon {
@@ -530,5 +576,54 @@ span {
     }
     .home-content p{
         font-size: 1.2rem;
+    }
+
+    .home-sci {
+        width: 160px;
+        margin: 2rem auto 0;
+    }
+
+    .home-sci a {
+        width: 38px;
+        height: 38px;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-height: 770px) {
+    .home {
+        flex-direction: column;
+        background-image: none;
+        padding-top: 12rem;
+    }
+    
+    .home::before {
+        content: '';
+        position: relative;
+        width: 200px;
+        height: 200px;
+        background-image: url('https://i.imgur.com/CX2IBZQ.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 2.5rem;
+    }
+    
+    .home-content {
+        max-width: 35rem;
+        margin-top: 1.7rem;
+    }
+    .home-content h1{
+        margin-top: 1rem;
+        font-size: 2.2rem;
+    }
+    .home-content p{
+        font-size: 1.1rem;
+    }
+
+    .home-sci {
+        position: static;
+        width: 160px;
+        margin: 2rem auto 0;
     }
 }
